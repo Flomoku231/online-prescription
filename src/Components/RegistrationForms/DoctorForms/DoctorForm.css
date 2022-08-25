@@ -1,0 +1,456 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.Doctor__Form{
+    background-color: var(--homepage-background-color);
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    margin-top: 0px;
+}
+.Doctor__Form-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+.Doctor__Form-Avatar-Background{
+    width: 359px;
+    height: 540px;
+    position: relative;
+    transform: translateY(8%);
+    background-color: var(--homepage-elipse-color);
+
+}
+#Doctor__Form-Avatar{
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    transform: translate(-60%,-12%);
+    position: absolute;
+}
+.Doctor__Form-header{
+    width: 100%;
+    height: 90%;
+    transform: translateX(20%);
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Doctor__Form-header>h1{
+    font-family: "Calibri";
+    color: var(--primary-project-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.Doctor__Form-fill{
+    width: 422px;
+    height: 700px;
+    overflow: hidden;
+        /* transform: translateX(50%); */
+    background-color: var(--secondary-backround-color);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+.Doctor-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 85%;
+    height: 90%;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+.Doctor-form--Fullname,.Doctor-form--DOB,.Doctor-form--Contact,.Doctor-form--Email, 
+.Doctor-form--Password,.Doctor-form--Hospital,.Doctor-form--Hospital-Adress, .Doctor-form--Comfirmed-Password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#Contact-error,#Comfirmed-error,#DOB-error,#Email-error,#Fullname-error,
+#Hospital-error,#HAddress-error,#Password-error{
+    position: absolute;
+    transform: translateY(58px);
+}
+input{
+    height: 35px;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Calibri";
+    border-color: rgba(128, 128, 128, 0.454);
+    outline:  rgba(128, 128, 128, 0.454);
+}
+label{
+    font-family: "Calibri";
+    font-size: 18px;
+    color: var(--primary-project-color);
+}
+.Doctor-form>button{
+    height: 45px;
+    background-color: var(--primary-project-color);
+    color: var(--secondary-backround-color);
+    font-size: 22px;
+    font-family: monospace;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.Doctor-form>button:hover{
+    background-color: var(--seconary-project-color);
+}
+/* Validation error */
+#Contact-error,#Comfirmed-error,#DOB-error,
+#Email-error,#Fullname-error,#Hospital-error,
+#HAddress-error,#Password-error
+{
+    color: red;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+    flex-direction: column;
+}
+@media all and (max-width:1200px){
+    .Doctor__Form-Avatar-Background {
+        width: 310px;
+        height: 622px;
+        position: relative;
+        transform: translateY(8%);
+        background-color: var(--homepage-elipse-color);
+    }
+    #Doctor__Form-Avatar {
+        width: 495px;
+        height: 584px;
+        overflow: hidden;
+        transform: translate(-51%,-12%);
+        position: absolute;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 20px;
+        font-size: 33px;
+    }
+    .Doctor__Form-fill {
+        width: 450px;
+        height: 650px;
+        overflow: hidden;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+    }
+    .Doctor__Form-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 120px;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media all and (max-width:1100px){
+    .Doctor__Form-fill {
+        width: 450px;
+        height: 650px;
+        overflow: hidden;
+        margin-left: -50px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 20px;
+        margin-left: -50px;
+        font-size: 33px;
+    }
+    #Doctor__Form-Avatar {
+        width: 445px;
+        height: 541px;
+        overflow: hidden;
+        transform: translate(-46%,-12%);
+        position: absolute;
+    }
+}
+@media all and (max-width:1000px){
+    #Doctor__Form-Avatar {
+        width: 350px;
+        height: 490px;
+        overflow: hidden;
+        transform: translate(-34%,7%);
+        position: absolute;
+    }
+
+}
+@media all and (max-width:850px){
+    .Doctor__Form-Avatar-Background {
+        width: 250px;
+        height: 622px;
+        position: relative;
+        transform: translateY(8%);
+        background-color: var(--homepage-elipse-color);
+    }
+    #Doctor__Form-Avatar {
+        width: 260px;
+        height: 415px;
+        overflow: hidden;
+        transform: translate(-30%,13%);
+        position: absolute;
+    }
+    .Doctor__Form-fill {
+        width: 430px;
+        height: 650px;
+        overflow: hidden;
+        margin-left: -50px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+    }
+}
+@media all and (max-width:700px){
+    .Doctor__Form-Avatar-Background {
+        width: 180px;
+        height: 622px;
+        position: relative;
+        transform: translateY(8%);
+        background-color: var(--homepage-elipse-color);
+    }
+    #Doctor__Form-Avatar {
+        width: 180px;
+        height: 365px;
+        overflow: hidden;
+        transform: translate(-24%,26%);
+        position: absolute;
+    }
+    .Doctor__Form-fill {
+        width: 400px;
+        height: 650px;
+        overflow: hidden;
+        margin-left: -50px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+    }
+}
+@media all and (max-width:600px){
+    .Doctor__Form-Avatar-Background {
+    width: 45px;
+    border-radius: 10px 0px 0px 10px;
+    height: 622px;
+    position: relative;
+    transform: translateY(8%);
+    background-color: var(--homepage-elipse-color);
+    }
+    #Doctor__Form-Avatar {
+        width: 180px;
+        display: none;
+        height: 365px;
+        overflow: hidden;
+        transform: translate(-24%,26%);
+        position: absolute;
+    }
+    .Doctor__Form-fill {
+        width: 400px;
+        height: 650px;
+        overflow: hidden;
+        margin-left: -37px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 11px;
+        margin-left: -6px;
+        font-size: 33px;
+    }
+}
+@media all and (max-width:500px){
+    .Doctor__Form-fill {
+        width: 360px;
+        height: 638px;
+        overflow: hidden;
+        margin-left: -37px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 18px;
+        margin-left: 1px;
+        font-size: 28px;
+    }
+    .Doctor__Form-Avatar-Background {
+        width: 25px;
+        border-radius: 10px 0px 0px 10px;
+        height: 622px;
+        position: relative;
+        transform: translateY(8%);
+        background-color: var(--homepage-elipse-color);
+    }
+}
+@media all and (max-width:450px){
+    .Doctor__Form-Avatar-Background {
+        width: 12px;
+        border-radius: 10px 0px 0px 10px;
+        height: 622px;
+        position: relative;
+        transform: translateY(8%);
+        background-color: var(--homepage-elipse-color);
+    }
+    .Doctor__Form-fill {
+    width: 340px;
+    height: 638px;
+    overflow: hidden;
+    margin-left: -35px;
+    /* transform: translateX(50%); */
+    background-color: var(--secondary-backround-color);
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    }
+    .Doctor-form>input {
+        height: 38px;
+        border-radius: 6px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-family: "Calibri";
+        border-color: rgba(128, 128, 128, 0.454);
+        outline: rgba(128, 128, 128, 0.454);
+    }
+    .Doctor__Form-header>h1 {
+    font-family: "Calibri";
+    color: var(--primary-project-color);
+    margin-bottom: 12px;
+    margin-left: -10px;
+    font-size: 28px;
+}
+}
+@media all and (max-width:400px){
+    .homePage__header-navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 35px 27px 10px 30px;
+    }
+    .Doctor__Form-fill {
+        width: 300px;
+        height: 638px;
+        overflow: hidden;
+        margin-left: -33px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 12px;
+        margin-left: -7px;
+        font-size: 25px;
+    }
+
+}
+@media all and (max-width:360px){
+    .Doctor__Form-fill {
+        width: 288px;
+        height: 638px;
+        overflow: hidden;
+        margin-left: -33px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 12px;
+        margin-left: -23px;
+        font-size: 26px;
+    }
+    .Doctor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 89%;
+    height: 90%;
+    margin: auto;
+    margin-top: 25px;
+    }
+    .Doctor-form>button {
+        height: 39px;
+        background-color: var(--primary-project-color);
+        color: var(--secondary-backround-color);
+        font-size: 22px;
+        font-family: monospace;
+        text-align: center;
+        justify-content: center;
+        margin-top: 15px;
+        text-align: center;
+        border: 0px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+}
+@media all and (max-width:345px){
+    .Doctor__Form-fill {
+        width: 275px;
+        height: 638px;
+        overflow: hidden;
+        margin-left: -37px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 12px;
+        margin-left: -23px;
+        font-size: 24px;
+    }
+}
+@media all and (max-width:320px){
+    .Doctor__Form-fill {
+        width: 265px;
+        height: 638px;
+        overflow: hidden;
+        margin-left: -37px;
+        /* transform: translateX(50%); */
+        background-color: var(--secondary-backround-color);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+    .Doctor__Form-header>h1 {
+        font-family: "Calibri";
+        color: var(--primary-project-color);
+        margin-bottom: 12px;
+        margin-left: -28px;
+        font-size: 24px;
+    }
+}

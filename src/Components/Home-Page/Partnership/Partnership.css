@@ -1,0 +1,405 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.homePage__partnership{
+    width: 100%;
+    align-items: center;
+}
+
+.partnership_elipse{
+    width: 734px;
+    height: 609px;
+    border-radius: 50%;
+    background-color: var(--homepage-elipse-color);
+    border: 0px;
+    outline: 0px;
+    overflow: hidden;
+    align-items: center;
+    margin: auto;
+    margin-top: 54px;
+}
+.space{
+    height: 80px;
+    width: 100%;
+}
+.homePage__partnership-content{
+    bottom: 0px;
+    position: absolute;
+    transform: translateY(232%);
+    overflow: hidden;
+    height: 528px;
+    width: 88%;
+    margin-right: 0px;
+    margin-left: 80px;
+    background-color: var(--secondary-backround-color);
+}
+.homePage__partnership-content>h2{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 40px;
+    color: var(--primary-project-color);
+}
+.Partnership_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.line1{
+    background-color: black;
+    width: 430px;
+    height: 0px;
+    top: 313px;
+    margin-right: 150px;
+    position: absolute;
+    margin-left: 165px;
+    border: 1px solid #0000009a;
+    transform: rotate(90deg);
+}
+.line2{
+    background-color: black;
+    width: 430px;
+    margin-left: 565px;
+    margin-right: 300px;
+    height: 0px;
+    position: absolute;
+    top: 313px;
+    border: 1px solid #0000009a;
+    transform: rotate(90deg);
+}
+
+/* Making Website Responsive */
+@media all and (max-width: 1200px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(250%);
+        width: 88%;
+        height: 600px;
+        margin-left: 72px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+    .line2 {
+        background-color: #00000021;
+        width: 430px;
+        margin-left: 465px;
+        visibility: hidden;
+        margin-right: 300px;
+        height: 0px;
+        position: absolute;
+        top: 313px;
+        border: 1px solid #0000009a;
+        transform: rotate(90deg);
+    }
+    .line1 {
+        background-color: #00000021;
+        width: 430px;
+        height: 0px;
+        visibility: hidden;
+        top: 313px;
+        margin-right: 150px;
+        position: absolute;
+        margin-left: 124px;
+        border: 1px solid #0000009a;
+        transform: rotate(90deg);
+    }
+    .partnership_elipse {
+        width: 755px;
+        height: 735px;
+        border-radius: 50%;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 54px;
+    }
+}
+@media all and (max-width: 1100px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(234%);
+        width: 88%;
+        height: 658px;
+        margin-left: 72px;
+        background-color: var(--secondary-backround-color);
+    }
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(225%);
+        top: 0px;
+        width: 88%;
+        height: 600px;
+        margin: 65px;
+        background-color: var(--secondary-backround-color);
+    }
+}
+@media all and (max-width: 1000px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(215%);
+        top: 0px;
+        width: 88%;
+        height: 625px;
+        margin-left: 55px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+}
+@media all and (max-width: 900px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(220%);
+        top: 0px;
+        width: 88%;
+        height: 576px;
+        margin-left: 55px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+    .partnership_elipse {
+        width: 600px;
+        height: 680px;
+        border-radius: 50%;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 82px;
+    }
+    .homePage__partnership-content>h2 {
+        text-align: center;
+        align-items: center;
+        margin-top: 14px;
+        font-size: 30px;
+        color: var(--primary-project-color);
+    }
+    .Partnership_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+}
+@media all and (max-width: 800px){
+    .partnership_elipse {
+        width: 570px;
+        height: 630px;
+        border-radius: 50%;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 70px;
+    }
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(183%);
+        margin-left: 41px;
+        top: 130px;
+        width: 90%;
+        height: 520px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+}
+@media all and (max-width:700px){
+    .partnership_elipse {
+        width: 450px;
+        height: 630px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 70px;
+    }
+    .homePage__partnership-content>h2 {
+        text-align: center;
+        align-items: center;
+        margin-top: 7px;
+        font-size: 30px;
+        color: var(--primary-project-color);
+    }
+}
+@media all and (max-width:600px){
+    .Partnership_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        gap: -300px;
+    }
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(178%);
+        margin-left: 30px;
+        justify-content: center;
+        top: -18px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 675px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+    .partnership_elipse {
+        width: 400px;
+        height: 745px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+}  
+@media all and (max-width:500px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(175%);
+        margin-left: 26px;
+        justify-content: center;
+        top: -25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 685px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+
+}     
+@media all and (max-width:450px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(175%);
+        margin-left: 23px;
+        justify-content: center;
+        top: -25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 710px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+    .homePage__partnership-content>h2 {
+    text-align: center;
+    align-items: center;
+    margin-top: 19px;
+    font-size: 30px;
+    color: var(--primary-project-color);
+    }
+    .partnership_elipse {
+        width: 300px;
+        height: 780px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+ 
+}
+@media all and (max-width:400px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(155%);
+        margin-left: 17px;
+        justify-content: center;
+        top: -25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 710px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+    .homePage__partnership-content>h2 {
+        text-align: center;
+        align-items: center;
+        margin-top: 13px;
+        font-size: 30px;
+        color: var(--primary-project-color);
+    }
+}
+@media all and (max-width:350px){
+    .partnership_elipse {
+        width: 200px;
+        height: 780px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(157%);
+        margin-left: 17px;
+        justify-content: center;
+        top: -25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 710px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+}
+@media all and (max-width:300px){
+    .homePage__partnership-content {
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(147%);
+        margin-left: 17px;
+        justify-content: center;
+        top: -25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 760px;
+        margin-right: 0px;
+        background-color: var(--secondary-backround-color);
+    }
+    .partnership_elipse {
+        width: 200px;
+        height: 790px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--homepage-elipse-color);
+        border: 0px;
+        outline: 0px;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+}

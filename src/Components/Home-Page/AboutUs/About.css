@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.homePage__aboutUs{
+    width: 88%;
+    margin: auto;
+    margin-top: 20px;
+    height: 440px;
+    background-color: var(--secondary-backround-color);
+    display: flex;
+    flex-direction: row;
+}
+.homePage__aboutUs-text{
+    width: 560px;
+    height: 304px;
+    font-family: "Calibri";
+    font-size: 28px;
+    margin: 20px 15px 0px 20px;
+}
+.homePage__aboutUs-text>h2{
+    color: var(--primary-project-color);
+}
+.homePage__aboutUs-avatar{
+    position: relative;
+    transform: translateX(5%);
+}
+
+/* Making the About section responsive */
+@media all and (max-width: 1200px){
+    .homePage__aboutUs-text>h2 {
+        color: var(--primary-project-color);
+        font-size: 35px;
+    }
+    .homePage__aboutUs-text {
+        width: 560px;
+        height: 304px;
+        font-family: "Calibri";
+        font-size: 25px;
+        margin: 20px 15px 0px 20px;
+    }
+    .homePage__aboutUs-avatar{
+        position: relative;
+        transform: translateX(0%);
+    }
+}
+@media all and (max-width: 1100px){
+    .homePage__aboutUs-text {
+        width: 560px;
+        height: 304px;
+        font-family: "Calibri";
+        font-size: 24px;
+        margin: 20px 15px 0px 20px;
+    }
+}
+@media all and (max-width: 1000px){
+    .homePage__aboutUs-avatar{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0%,10%);
+
+    }
+    #AboutUs_Image{
+        width: 100%;
+    }
+}
+@media all and (max-width: 900px){
+    .homePage__aboutUs-text>h2 {
+        color: var(--primary-project-color);
+        font-size: 25px;
+    }
+    .homePage__aboutUs-text>p{
+        font-size: 20px;
+    }
+    .homePage__aboutUs {
+        width: 88%;
+        margin: auto;
+        margin-top: 20px;
+        height: 334px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media all and (max-width: 800px){
+    .homePage__aboutUs {
+        width: 90%;
+        margin: auto;
+        margin-top: 45px;
+        height: 330px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: row;
+    }
+    .homePage__aboutUs-text>h2 {
+        color: var(--primary-project-color);
+        font-size: 22px;
+    }
+
+    .homePage__aboutUs-text>p {
+        font-size: 19px;
+    }
+}
+@media all and (max-width: 600px){
+    .homePage__aboutUs {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 45px;
+        height: 470px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: column;
+    }
+    .homePage__aboutUs-text>p {
+        width: 100%;
+        font-size: 19px;
+        margin: 0px;
+    }
+    .homePage__aboutUs-text {
+        width: 90%;
+        height: 304px;
+        font-family: "Calibri";
+        font-size: 24px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #AboutUs_Image {
+        width: 75%;
+        height: 250px;
+        transform: translateY(-20%);
+    }
+}
+@media all and (max-width:500px){
+    .homePage__aboutUs {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 45px;
+        height: 490px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media all and (max-width:450px){
+    .homePage__aboutUs {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 45px;
+        height: 510px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: column;
+    }
+    .homePage__aboutUs-text>p {
+        width: 100%;
+        font-size: 18px;
+        margin: 0px;
+    }
+    #AboutUs_Image {
+        width: 75%;
+        height: 230px;
+        transform: translateY(-20%);
+    }
+}
+@media all and (max-width:350px){
+    .homePage__aboutUs {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 45px;
+        height: 530px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: column;
+    }
+    #AboutUs_Image {
+        width: 75%;
+        height: 190px;
+        transform: translateY(-20%);
+    }
+}
+@media all and (max-width:300px){
+    .homePage__aboutUs {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 45px;
+        height: 550px;
+        background-color: var(--secondary-backround-color);
+        display: flex;
+        flex-direction: column;
+    }
+    #AboutUs_Image {
+    width: 75%;
+    height: 175px;
+    transform: translateY(-20%);
+}
+}

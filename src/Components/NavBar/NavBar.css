@@ -1,0 +1,16 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.homePage__header-navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 45px 10px 30px;
+}
+#MoveBack{
+    cursor: pointer;
+    margin-right: 20px;
+}

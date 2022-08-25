@@ -1,0 +1,12 @@
+:root{
+  --primary-project-color:#035AA6;
+  --seconary-project-color:#1304B3;
+  --homepage-background-color:#EEF5FB;
+  --secondary-backround-color:white;
+  --homepage-elipse-color:rgba(19, 4, 179, 0.24);
+  --primary-text-color:black;
+}
+html, body,#root{
+  height: 100%;
+  width: 100%;
+}
